@@ -114,8 +114,14 @@
 		<!-- https://mvnrepository.com/artifact/com.azure/azure-storage-blob -->
 		<dependency>
 			<groupId>com.azure</groupId>
-			<artifactId>azure-storage-blob</artifactId>
+			<artifactId>azure-storage-blob</artifactId> 
 			<version>12.14.1</version>
+			<exclusions>
+				<exclusion>
+					<groupId>com.azure</groupId>
+					<artifactId>azure-core-http-netty</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 
 	</dependencies>
