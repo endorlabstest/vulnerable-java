@@ -35,10 +35,10 @@ public class BooksServlet extends HttpServlet {
     @Override
     public void init() throws ServletException {
         super.init();
-        connectionUrl =System.getProperty("prismo_connection_url", "jdbc:oracle:thin:@10.0.22.108:1521:XE");
-        dbUser =System.getProperty("prismo_db_user", "sys as sysdba");
-        dbPassword =System.getProperty("prismo_db_password", "Psmo0601");
-        dbType =System.getProperty("prismo_db_type", DB_TYPE_ORACLE);
+        connectionUrl =System.getProperty("endor_connection_url", "jdbc:oracle:thin:@10.0.22.108:1521:XE");
+        dbUser =System.getProperty("endor_db_user", "sys as sysdba");
+        dbPassword =System.getProperty("endor_db_password", "Psmo0601");
+        dbType =System.getProperty("endor_db_type", DB_TYPE_ORACLE);
 
     }
 
