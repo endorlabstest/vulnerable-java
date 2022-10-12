@@ -168,25 +168,3 @@ public class AppServlet extends javax.servlet.http.HttpServlet {
 
     }
 }
-    
-//    public static void restCall(javax.servlet.http.HttpServletRequest req,
-//                                javax.servlet.http.HttpServletResponse resp,
-//                                int counter) throws javax.servlet.ServletException,
-//                                            IOException, ClientProtocolException {
-//        String nameVal= "p"+counter + "="+counter;
-//        HttpClient client = new DefaultHttpClient();
-//        HttpGet request = new HttpGet("http://10.8.0.28:8080/javawebapp_war_exploded/AppServlet?isloopback=true&"+ nameVal);
-//        HttpResponse response = client.execute(request);
-//        BufferedReader rd = new BufferedReader(new InputStreamReader(response.getEntity().getContent()));
-//        String line = "";
-//        resp.getWriter().print("From call");
-//
-//        while ((line = rd.readLine()) != null) {
-//            System.out.println(line);
-//            resp.getWriter().print(line);
-//        }
-
-
-
-
-

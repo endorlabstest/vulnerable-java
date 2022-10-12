@@ -10,104 +10,50 @@
   <display-name>Archetype Created Web Application</display-name>
   <servlet>
     <servlet-name>BooksServlet</servlet-name>
-    <servlet-class>com.prismo.BooksServlet</servlet-class>
+    <servlet-class>com.endor.BooksServlet</servlet-class>
   </servlet>
     <servlet>
     <servlet-name>HttpTrace</servlet-name>
-    <servlet-class>com.prismo.HttpTrace</servlet-class>
-  </servlet>
-  <servlet>
-    <servlet-name>EncryptionServlet</servlet-name>
-    <servlet-class>com.prismo.EncryptionServlet</servlet-class>
-  </servlet>
-  <servlet>
-    <servlet-name>MongoActionsServlet</servlet-name>
-    <servlet-class>mongo.MongoActionsServlet</servlet-class>
-  </servlet>
-  <servlet>
-    <servlet-name>AzureActionsServlet</servlet-name>
-    <servlet-class>azure.AzureActionsServlet</servlet-class>
-  </servlet>
-  <servlet>
-    <servlet-name>XmlXXE</servlet-name>
-    <servlet-class>com.prismo.XmlXXE</servlet-class>
-  </servlet>
-  <servlet>
-    <servlet-name>BooksServlet1</servlet-name>
-    <servlet-class>com.prismo.BooksServlet1</servlet-class>
+    <servlet-class>com.endor.HttpTrace</servlet-class>
   </servlet>
   <servlet>
     <servlet-name>ExecuteServlet</servlet-name>
-    <servlet-class>com.prismo.ExecuteServlet</servlet-class>
+    <servlet-class>com.endor.ExecuteServlet</servlet-class>
   </servlet>
   <servlet>
     <servlet-name>OSCommandServlet</servlet-name>
-    <servlet-class>com.prismo.OSCommandServlet</servlet-class>
+    <servlet-class>com.endor.OSCommandServlet</servlet-class>
   </servlet>
   <servlet>
     <servlet-name>AppServlet</servlet-name>
-    <servlet-class>com.prismo.AppServlet</servlet-class>
+    <servlet-class>com.endor.AppServlet</servlet-class>
   </servlet>
   <servlet>
     <servlet-name>AsyncServlet</servlet-name>
-    <servlet-class>com.prismo.AsyncServlet</servlet-class>
+    <servlet-class>com.endor.AsyncServlet</servlet-class>
     <async-supported>true</async-supported>
   </servlet>
   <servlet>
     <servlet-name>Deserialize1</servlet-name>
-    <servlet-class>com.prismo.Deserialize1</servlet-class>
+    <servlet-class>com.endor.Deserialize1</servlet-class>
     <async-supported>true</async-supported>
   </servlet>
   <servlet>
-    <servlet-name>NewSQLExitServlet</servlet-name>
-    <servlet-class>com.prismo.NewSQLExitServlet</servlet-class>
-  </servlet>
-  <servlet>
-    <servlet-name>BotTest</servlet-name>
-    <servlet-class>com.prismo.BotTest</servlet-class>
-  </servlet>
-  <servlet>
-    <servlet-name>elExpression</servlet-name>
-    <servlet-class>com.prismo.ElExpression</servlet-class>
-  </servlet>
-  <servlet>
-    <servlet-name>TypeSniff</servlet-name>
-    <servlet-class>com.prismo.TypeSniff</servlet-class>
+    <servlet-name>ElExpression</servlet-name>
+    <servlet-class>com.endor.ElExpression</servlet-class>
   </servlet>
   <servlet>
     <servlet-name>FileUpload</servlet-name>
-    <servlet-class>com.prismo.FileUploadServlet</servlet-class>
+    <servlet-class>com.endor.FileUploadServlet</servlet-class>
   </servlet>
-  <!-- 
-  <servlet>
-    <servlet-name>SecurePage</servlet-name>
-    <servlet-class>com.prismo.SecurePage</servlet-class>
-  </servlet>
-   -->
 
-  <servlet-mapping>
-    <servlet-name>EncryptionServlet</servlet-name>
-    <url-pattern>/encryption</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>MongoActionsServlet</servlet-name>
-    <url-pattern>/mongo</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>AzureActionsServlet</servlet-name>
-    <url-pattern>/azure</url-pattern>
-  </servlet-mapping>
   <servlet-mapping>
     <servlet-name>XmlXXE</servlet-name>
     <url-pattern>/xmlxxe</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
-    <servlet-name>elExpression</servlet-name>
+    <servlet-name>ElExpression</servlet-name>
     <url-pattern>/elexpression</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>NewSQLExitServlet</servlet-name>
-    <url-pattern>/newsqlexit</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
     <servlet-name>BooksServlet</servlet-name>
@@ -116,10 +62,6 @@
    <servlet-mapping>
     <servlet-name>HttpTrace</servlet-name>
     <url-pattern>/httptrace</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>BooksServlet1</servlet-name>
-    <url-pattern>/booklist1</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
     <servlet-name>Deserialize1</servlet-name>
@@ -142,26 +84,12 @@
     <url-pattern>/async</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
-    <servlet-name>BotTest</servlet-name>
-    <url-pattern>/bottest</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>TypeSniff</servlet-name>
-    <url-pattern>/typesniff</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
     <servlet-name>FileUpload</servlet-name>
     <url-pattern>/upload</url-pattern>
   </servlet-mapping>
-  <!-- 
-  <servlet-mapping>
-    <servlet-name>SecurePage</servlet-name>
-    <url-pattern>/securepage</url-pattern>
-  </servlet-mapping>
-   -->
   <filter>
     <filter-name>CSPFilter</filter-name>
-    <filter-class>com.prismo.CSPFilter</filter-class>
+    <filter-class>com.endor.CSPFilter</filter-class>
   </filter>
   <filter-mapping>
     <filter-name>CSPFilter</filter-name>
@@ -169,26 +97,20 @@
   </filter-mapping>
   <filter>
     <filter-name>WrapperFilter</filter-name>
-    <filter-class>com.prismo.wrapper.WrapperFilter</filter-class>
+    <filter-class>com.endor.wrapper.WrapperFilter</filter-class>
   </filter>
-
   <filter-mapping>
     <filter-name>WrapperFilter</filter-name>
     <url-pattern>/wrapper</url-pattern>
   </filter-mapping>
-
-
-
   <servlet>
     <servlet-name>Servlet</servlet-name>
-    <servlet-class>com.prismo.wrapper.WrapperServlet</servlet-class>
+    <servlet-class>com.endor.wrapper.WrapperServlet</servlet-class>
   </servlet>
-
   <servlet-mapping>
     <servlet-name>Servlet</servlet-name>
     <url-pattern>/wrapper</url-pattern>
   </servlet-mapping>
-
   <filter>
     <filter-name>httpHeaderSecurity</filter-name>
     <filter-class>org.apache.catalina.filters.HttpHeaderSecurityFilter</filter-class>
@@ -202,11 +124,10 @@
     <filter-name>httpHeaderSecurity</filter-name>
     <url-pattern>/hsts/securepage</url-pattern>
     <dispatcher>REQUEST</dispatcher>
-  </filter-mapping>
-  
+  </filter-mapping> 
   <security-constraint>
     <web-resource-collection>
-      <web-resource-name>prismo-webapp</web-resource-name>
+      <web-resource-name>endor-webapp</web-resource-name>
       <url-pattern>/hsts/*</url-pattern>
       <http-method>GET</http-method>
       <http-method>POST</http-method>
@@ -215,17 +136,5 @@
         <transport-guarantee>CONFIDENTIAL</transport-guarantee>
       </user-data-constraint>
   </security-constraint>
-
-  <context-param>
-    <param-name>MONGODB_HOST</param-name>
-    <param-value>localhost</param-value>
-  </context-param>
-  <context-param>
-    <param-name>MONGODB_PORT</param-name>
-    <param-value>27017</param-value>
-  </context-param>
-  <welcome-file-list>
-    <welcome-file>persons.jsp</welcome-file>
-  </welcome-file-list>
 </web-app>
 
