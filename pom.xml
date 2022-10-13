@@ -114,6 +114,24 @@
         	<groupId>org.semver</groupId>
         	<artifactId>api</artifactId>
         	<version>0.9.33</version>
+        	<exclusions>
+				<exclusion>
+					<groupId>com.google.code.findbugs</groupId>
+					<artifactId>jsr305</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>commons-lang</groupId>
+					<artifactId>commons-lang</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>de.tototec</groupId>
+					<artifactId>de.tototec.cmdoption</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.ow2.asm</groupId>
+					<artifactId>asm</artifactId>
+				</exclusion>
+			</exclusions>
       	  </dependency>
 	</dependencies>
 
