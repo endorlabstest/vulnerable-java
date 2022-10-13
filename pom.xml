@@ -69,7 +69,30 @@
 			<groupId>com.nqzero</groupId>
 			<artifactId>permit-reflect</artifactId>
 			<version>0.3</version>
-		</dependency>
+		</dependency>	
+	     <dependency>
+	        <groupId>org.jboss.arquillian.config</groupId>
+	        <artifactId>arquillian-config-spi</artifactId>
+	        <version>1.7.0.Alpha12</version>
+	      </dependency>
+	
+	       <dependency>
+	        <groupId>org.jboss.arquillian.container</groupId>
+	        <artifactId>arquillian-container-impl-base</artifactId>
+	        <version>1.7.0.Alpha12</version>
+	      </dependency>
+	
+	       <dependency>
+	        <groupId>org.jboss.shrinkwrap.descriptors</groupId>
+	        <artifactId>shrinkwrap-descriptors-api-base</artifactId>
+	        <version>2.0.0</version>
+	      </dependency>
+	
+	       <dependency>
+	        <groupId>org.jboss.shrinkwrap</groupId>
+	        <artifactId>shrinkwrap-impl-base</artifactId>
+	        <version>1.2.6</version>
+	      </dependency>
 	</dependencies>
 
 	<build>
