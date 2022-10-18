@@ -46,6 +46,10 @@
     <servlet-name>FileUpload</servlet-name>
     <servlet-class>com.endor.FileUploadServlet</servlet-class>
   </servlet>
+    <servlet>
+    <servlet-name>XmlXXE</servlet-name>
+    <servlet-class>com.endor.XmlXXE</servlet-class>
+  </servlet>
 
   <servlet-mapping>
     <servlet-name>XmlXXE</servlet-name>

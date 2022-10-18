@@ -4,7 +4,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.PrintWriter;
 
 public class HtmlUtil {
-    static String title = "Prismo Webapp";
+    static String title = "Endor Webapp";
 
     public static void printMenu(HttpServletResponse response) {
         printMenuWithPrefix(response, "");
