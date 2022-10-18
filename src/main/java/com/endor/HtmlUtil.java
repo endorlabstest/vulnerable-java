@@ -4,7 +4,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.PrintWriter;
 
 public class HtmlUtil {
-    static String title = "Endor Webapp";
+    static String title = "ENDOR LABS Webapp";
 
     public static void printMenu(HttpServletResponse response) {
         printMenuWithPrefix(response, "");
@@ -19,10 +19,8 @@ public class HtmlUtil {
             PrintWriter out = response.getWriter();
             StringBuffer menu = new StringBuffer();
             menu.append("&nbsp&nbsp");
-            menu.append("<div style=\"background-color:cyan\"><br>");
+            menu.append("<div><br>");
             menu.append("&nbsp&nbsp");
-            menu.append("<b><a href=" + relativePath + "clothing-shop/login>Login</a></b>");
-            menu.append("&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp");
             menu.append("<b><a href=" + relativePath + "booklist>SQL</a></b>");
             menu.append("&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp");
             menu.append("<b><a href=" + relativePath + "cmdexec>WebShell</a></b>");
@@ -33,27 +31,13 @@ public class HtmlUtil {
             menu.append("&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp");
             menu.append("<b><a href=" + relativePath + "deserialize1>Deserialization</a></b>");
             menu.append("&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp");
-            menu.append("<b><a href=" + relativePath + "booklist1>SQLCustom</a></b>");
-            menu.append("&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp");
-            menu.append("<b><a href=" + relativePath + "xss.jsp>XSS</a></b>");
-            menu.append("&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp");
             menu.append("<b><a href=" + relativePath + "elexpression>ELExpression</a></b>");
             menu.append("&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp");
             menu.append("<b><a href=" + relativePath + "xmlxxe>XmlXXE</a></b>");
             menu.append("&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp");
-            menu.append("<b><a href=" + relativePath + "bottest>Bottest</a></b>");
-            menu.append("&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp");
             menu.append("<b><a href=" + relativePath + "cookietest>CookieTest</a></b>");
             menu.append("&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp");
-            menu.append("<b><a href=" + relativePath + "encryption>EncryptionServlet</a></b>");
-            menu.append("&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp");
-            menu.append("<b><a href=" + relativePath + "GetInputStreamTest>GetInputStreamTest</a></b>");
-            menu.append("&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp");
             menu.append("<b><a href=" + relativePath + "httptrace>HttpTrace</a></b>");
-            menu.append("&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp");
-            menu.append("<b><a href=" + relativePath + "hsts/securepage>HSTS</a></b>");
-            menu.append("&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp");
-            menu.append("<b><a href=" + relativePath + "TypeSniffTest.html>TypeSniff</a></b>");
             menu.append("<br>");
             menu.append("&nbsp&nbsp");
             menu.append("</div>");
@@ -129,8 +113,9 @@ public class HtmlUtil {
     public static void startBody(HttpServletResponse response) {
         try {
             PrintWriter out = response.getWriter();
-            out.println("<body bgcolor=\"lightgray\" onload=\"loaded();\">");
-            out.println("<h1>" + HtmlUtil.title + "</h1>");
+            out.println("<body bgcolor=\"lightgray\" onload=\"loaded();\"  style=\"background-image: url('endor.jpg');background-repeat: no-repeat;  background-attachment: fixed;\n"
+            		+ "  background-size: 100% 100%;\">");
+            out.println("<h1><center>" + HtmlUtil.title + "</center></h1>");
         } catch (Exception e) {
             e.printStackTrace();
         }
