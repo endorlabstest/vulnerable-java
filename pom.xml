@@ -24,14 +24,14 @@
 	    <snapshotRepository>
 	        <id>snapshots</id>
 	        <name>a0lszywif52gq-artifactory-primary-0-snapshots</name>
-	        <url>https://endor.jfrog.io/artifactory/endor-libs-snapshot-local</url>
+	        <url>https://endor.jfrog.io/artifactory/endor-libs-snapshot</url>
 	    </snapshotRepository>
     </distributionManagement>
 	<dependencies>
 		<dependency>
     		<groupId>com.endor.webapp</groupId>
     		<artifactId>endor-java-webapp-demo</artifactId>
-    		<version>4.0-20221019.184220-2</version>
+    		<version>4.0-20221020.141903-6</version>
 		</dependency>
 		<dependency>
 			<groupId>javax.servlet</groupId>
