@@ -15,7 +15,24 @@
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
+	<distributionManagement>
+	    <repository>
+	        <id>central</id>
+	        <name>a0lszywif52gq-artifactory-primary-0-releases</name>
+	        <url>https://endor.jfrog.io/artifactory/endor-libs-release</url>
+	    </repository>
+	    <snapshotRepository>
+	        <id>snapshots</id>
+	        <name>a0lszywif52gq-artifactory-primary-0-snapshots</name>
+	        <url>https://endor.jfrog.io/artifactory/endor-libs-snapshot</url>
+	    </snapshotRepository>
+    </distributionManagement>
 	<dependencies>
+		<dependency>
+    		<groupId>com.endor.webapp</groupId>
+    		<artifactId>endor-java-webapp-demo</artifactId>
+    		<version>4.0-20221020.141903-6</version>
+		</dependency>
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
