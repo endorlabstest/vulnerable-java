@@ -16,11 +16,11 @@
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
 	<dependencies>
-			<dependency>
-  			  <groupId>test.endor.logback</groupId>
-   			 <artifactId>logback-classic</artifactId>
-   			 <version>1.4.5</version>
-			</dependency>
+<dependency>
+    <groupId>ch.qos.logback</groupId>
+    <artifactId>logback-classic</artifactId>
+    <version>1.4.5</version>
+</dependency>
 			<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
