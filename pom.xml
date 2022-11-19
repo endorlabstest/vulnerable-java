@@ -16,12 +16,12 @@
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
 	<dependencies>
-		<dependency>
-    		<groupId>com.endor.webapp</groupId>
-    		<artifactId>endor-java-webapp-demo</artifactId>
-    		<version>4.0-20221020.141903-6</version>
-		</dependency>
-		<dependency>
+			<dependency>
+  			  <groupId>test.endor.logback</groupId>
+   			 <artifactId>logback-classic</artifactId>
+   			 <version>1.4.5</version>
+			</dependency>
+			<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
 			<version>3.1.0</version>
