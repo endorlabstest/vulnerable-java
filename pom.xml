@@ -3,9 +3,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>test.endor.jfrog</groupId>
-	<artifactId>test-endor-jfrog</artifactId>
-	<version>15.0-SNAPSHOT</version>
+	<groupId>com.endor.webapp</groupId>
+	<artifactId>endor-java-webapp-demo</artifactId>
+	<version>6.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>endor-webapp Maven Webapp</name>
 	<!-- FIXME change it to the project's website -->
@@ -16,12 +16,12 @@
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
 	<dependencies>
-<dependency>
-    <groupId>ch.qos.logback</groupId>
-    <artifactId>logback-classic</artifactId>
-    <version>1.4.6</version>
-</dependency>
-			<dependency>
+        <dependency>
+    <groupId>test.endor.jfrog</groupId>
+    <artifactId>test-endor-jfrog</artifactId>
+    <version>15.0-20221120.192008-1</version>
+        </dependency>
+		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
 			<version>3.1.0</version>
@@ -146,7 +146,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>test-endor-jfrog</finalName>
+		<finalName>endor-java-webapp-demo</finalName>
 		<pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
 			<plugins>
 				<plugin>
@@ -192,3 +192,4 @@
 		</plugins>
 	</build>
 </project>
+
