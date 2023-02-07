@@ -1,0 +1,18 @@
+on: workflow_dispatch
+
+jobs:
+  test_job:
+    runs-on: ubuntu-latest
+    name: A sample job
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Run scan
+        id: run-scan
+        uses: ankurv3rma/ts-action-test@main
+        with:
+          api: ${{ secrets.ENDOR_API }}
+          api_key: ${{ secrets.ENDOR_API_KEY }}
+          api_secret: ${{ secrets.ENDOR_API_SECRET }}
+          namespace: "testing-tenant"
